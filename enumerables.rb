@@ -36,12 +36,7 @@ end
 # for the spicy food whose cuisine matches the cuisine being passed to the method
 def get_spicy_food_by_cuisine(spicy_foods, cuisine)
   # your code here
-  filtered_foods = {}
-  spicy_foods.each do |f| 
-    if f[:cuisine] == cuisine
-      
-    end
-  end
+spicy_foods.find{|f| f[:cuisine] == cuisine }
 end
 
 # Given an array of spicy foods, **return an array of hashes** 
